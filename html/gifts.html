@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🎁 Surprise Gifts</title>
+
+    <link rel="stylesheet" href="/css/gifts.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="loader">
+    
+        <div class="cake-loader">
+    
+            🎂
+    
+        </div>
+    
+        <h2>Preparing Your Surprise...</h2>
+    
+    </div>
+    
+    <div class="background"></div>
+
+    <h1 class="title">
+
+        🎁 Choose Your Surprise Gift 🎁
+
+    </h1>
+
+    <p class="subtitle">
+
+        Select any gift and scratch it to reveal your surprise ❤️
+
+    </p>
+
+    <div class="gift-container">
+
+        <div class="gift" data-gift="1">
+            🎁
+            <span>Gift 1</span>
+        </div>
+
+        <div class="gift" data-gift="2">
+            🎁
+            <span>Gift 2</span>
+        </div>
+
+        <div class="gift" data-gift="3">
+            🎁
+            <span>Gift 3</span>
+        </div>
+
+        <div class="gift" data-gift="4">
+            🎁
+            <span>Gift 4</span>
+        </div>
+
+        <div class="gift" data-gift="5">
+            🎁
+            <span>Gift 5</span>
+        </div>
+
+        <div class="gift" data-gift="6">
+            🎁
+            <span>Gift 6</span>
+        </div>
+
+        <div class="gift" data-gift="7">
+            🎁
+            <span>Gift 7</span>
+        </div>
+
+        <div class="gift" data-gift="8">
+            🎁
+            <span>Gift 8</span>
+        </div>
+
+        <div class="gift" data-gift="9">
+            🎁
+            <span>Gift 9</span>
+        </div>
+
+        <div class="gift" data-gift="10">
+            🎁
+            <span>Gift 10</span>
+        </div>
+
+    </div>
+
+    <!-- Full Screen Popup -->
+
+    <div id="popup">
+
+        <div class="popup-content">
+
+            <button id="close">
+
+                ✖
+
+            </button>
+
+            <h2>
+
+                🎁 Surprise Gift
+
+            </h2>
+
+            <div id="scratchArea">
+
+                <canvas id="scratchCanvas"></canvas>
+
+                <div id="giftContent">
+
+                    <h1>
+
+                        🎉 Congratulations 🎉
+
+                    </h1>
+
+                    <img src="assets/images/gift.jpg" alt="Gift">
+
+                    <p>
+
+                        ❤️ Wishing You a Very Happy Birthday ❤️
+
+                        May your life always be filled with happiness,
+                        success and beautiful memories.
+
+                        🥳🎂🎈🎉
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="shareBox">
+
+                <h3>
+
+                    📤 Share to Unlock Gift
+
+                </h3>
+
+                <p>
+
+                    Share this birthday surprise with your friends.
+
+                </p>
+
+                <button id="shareBtn">
+
+                    Share Now
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Floating Hearts -->
+
+    <div id="hearts"></div>
+
+    <!-- Floating Sparkles -->
+
+    <div id="sparkles"></div>
+
+    <!-- Background Music -->
+
+    <audio id="giftMusic">
+
+        <source src="assets/audio/gift.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <script src="/js/gifts.js"></script>
+
+</body>
+
+</html>

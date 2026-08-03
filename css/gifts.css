@@ -1,0 +1,455 @@
+/* ==========================
+   Reset
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    
+    background: linear-gradient(135deg, #2b1055, #120136, #000814);
+    color: #fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* ==========================
+   Animated Background
+========================== */
+
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #09091f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 99999;
+}
+
+.cake-loader {
+    font-size: 80px;
+    animation: bounce 1s infinite;
+}
+
+#loader h2 {
+    margin-top: 20px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+
+.background {
+    position: fixed;
+    inset: 0;
+    background:
+        radial-gradient(circle at top, #5d2de0, #000814 70%);
+    z-index: -2;
+}
+
+/* ==========================
+   Title
+========================== */
+
+.title {
+
+    margin-top: 40px;
+
+    text-align: center;
+
+    font-size: 48px;
+
+    color: #FFD54F;
+
+    text-shadow:
+        0 0 15px gold,
+        0 0 35px orange;
+
+}
+
+.subtitle {
+
+    text-align: center;
+
+    margin-top: 10px;
+
+    color: #ddd;
+
+}
+
+/* ==========================
+   Gift Grid
+========================== */
+
+.gift-container {
+
+    width: 90%;
+
+    margin: 50px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(170px, 1fr));
+
+    gap: 30px;
+
+}
+
+/* ==========================
+   Gift Box
+========================== */
+
+.gift {
+
+    height: 180px;
+
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255, 255, 255, .2);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    cursor: pointer;
+
+    transition: .35s;
+
+    font-size: 65px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .3);
+
+}
+
+.gift span {
+
+    margin-top: 10px;
+
+    font-size: 18px;
+
+}
+
+.gift:hover {
+
+    transform:
+        translateY(-12px) scale(1.05);
+
+    box-shadow:
+        0 0 30px hotpink;
+
+}
+
+/* ==========================
+   Popup
+========================== */
+
+#popup {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0, 0, 0, .85);
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 999;
+
+}
+
+.popup-content {
+
+    width: 90%;
+
+    max-width: 700px;
+
+    padding: 30px;
+
+    border-radius: 25px;
+
+    background: rgba(255, 255, 255, .08);
+
+    backdrop-filter: blur(18px);
+
+    text-align: center;
+
+    position: relative;
+
+}
+
+/* ==========================
+   Close Button
+========================== */
+
+#close {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 20px;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: red;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+}
+
+/* ==========================
+   Scratch Area
+========================== */
+
+#scratchArea {
+
+    margin-top: 20px;
+
+    position: relative;
+
+    width: 100%;
+
+    height: 350px;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    background: white;
+
+}
+
+/* Canvas */
+
+#scratchCanvas {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+}
+
+/* Hidden Gift */
+
+#giftContent {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    padding: 20px;
+
+    background: white;
+
+    color: #333;
+
+}
+
+#giftContent img {
+
+    width: 350px;
+    height: 300px;
+
+    border-radius: 20px;
+
+    margin: 20px 0;
+
+    box-shadow:
+        0 0 25px rgba(0, 0, 0, .2);
+
+}
+
+/* ==========================
+   Share Box
+========================== */
+
+#shareBox {
+
+    margin-top: 30px;
+
+    display: none;
+
+}
+
+#shareBtn {
+
+    margin-top: 15px;
+
+    border: none;
+
+    padding: 16px 40px;
+
+    font-size: 18px;
+
+    border-radius: 40px;
+
+    background:
+        linear-gradient(90deg,
+            #ff4081,
+            #ff9800);
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+#shareBtn:hover {
+
+    transform: scale(1.08);
+
+}
+
+/* ==========================
+   Hearts
+========================== */
+
+.heart {
+
+    position: fixed;
+
+    bottom: -40px;
+
+    color: #ff4d88;
+
+    animation: heartUp linear forwards;
+
+}
+
+@keyframes heartUp {
+
+    from {
+
+        transform: translateY(0);
+
+        opacity: 1;
+
+    }
+
+    to {
+
+        transform: translateY(-110vh);
+
+        opacity: 0;
+
+    }
+
+}
+
+/* ==========================
+   Sparkles
+========================== */
+
+.sparkle {
+
+    position: fixed;
+
+    color: #fff;
+
+    animation: blink 2s infinite;
+
+}
+
+@keyframes blink {
+
+    50% {
+
+        opacity: .2;
+
+    }
+
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:768px) {
+
+    .title {
+
+        font-size: 34px;
+
+    }
+
+    .popup-content {
+
+        padding: 20px;
+
+    }
+
+    #scratchArea {
+
+        height: 280px;
+
+    }
+
+    .gift {
+
+        height: 150px;
+
+        font-size: 55px;
+
+    }
+
+}

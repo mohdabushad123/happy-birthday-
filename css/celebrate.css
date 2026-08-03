@@ -1,0 +1,292 @@
+/* ===========================
+   Reset
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    background: linear-gradient(180deg, #14002d, #25004b, #000814);
+    color: #fff;
+}
+
+/* ===========================
+   Scene
+=========================== */
+
+.scene {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.scene h1 {
+    font-size: 55px;
+    color: #FFD54F;
+    text-shadow:
+        0 0 20px gold,
+        0 0 40px orange;
+    margin-bottom: 40px;
+}
+
+#message {
+    margin-top: 40px;
+    font-size: 28px;
+    color: #fff;
+}
+
+/* ===========================
+   Fireworks Canvas
+=========================== */
+
+#fireworks {
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+}
+
+/* ===========================
+   Balloons
+=========================== */
+
+.balloon {
+    position: absolute;
+    bottom: -150px;
+    width: 65px;
+    height: 85px;
+    border-radius: 50%;
+    animation: fly linear infinite;
+}
+
+.balloon::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 90px;
+    background: white;
+    left: 50%;
+    top: 85px;
+}
+
+.red {
+    background: #ff4d6d;
+    left: 5%;
+    animation-duration: 12s;
+}
+
+.blue {
+    background: #4fc3f7;
+    left: 20%;
+    animation-duration: 15s;
+}
+
+.green {
+    background: #69f0ae;
+    left: 35%;
+    animation-duration: 13s;
+}
+
+.yellow {
+    background: #ffee58;
+    left: 50%;
+    animation-duration: 17s;
+}
+
+.pink {
+    background: #ff80ab;
+    left: 70%;
+    animation-duration: 14s;
+}
+
+.purple {
+    background: #b388ff;
+    left: 90%;
+    animation-duration: 16s;
+}
+
+@keyframes fly {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-130vh);
+    }
+}
+
+/* ===========================
+   Girl
+=========================== */
+
+.girl {
+    position: relative;
+    width: 180px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #ffd9b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    z-index: 2;
+}
+
+.hair {
+    position: absolute;
+    top: -10px;
+    width: 105px;
+    height: 55px;
+    background: #2f1b0c;
+    border-radius: 60px 60px 15px 15px;
+    z-index: 3;
+}
+
+.body {
+    width: 80px;
+    height: 120px;
+    background: #ff4da6;
+    border-radius: 20px;
+    margin-top: -5px;
+}
+
+.left-hand,
+.right-hand {
+    position: absolute;
+    width: 80px;
+    height: 12px;
+    background: #ffd9b3;
+    top: 120px;
+    border-radius: 20px;
+}
+
+.left-hand {
+    left: -25px;
+    transform: rotate(30deg);
+}
+
+.right-hand {
+    right: -25px;
+    transform: rotate(-25deg);
+    transform-origin: left center;
+    font-size: 28px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.legs {
+    width: 18px;
+    height: 85px;
+    background: #ffd9b3;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 35px 0 #ffd9b3;
+}
+
+/* ===========================
+   Table
+=========================== */
+
+.table {
+    width: 340px;
+    height: 18px;
+    background: #7a4b28;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.table::after {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 18px;
+    width: 18px;
+    height: 120px;
+    background: #5d3417;
+    box-shadow: 270px 0 #5d3417;
+}
+
+/* ===========================
+   Cake
+=========================== */
+
+.cake {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 18px;
+    width: 130px;
+    height: 90px;
+    background: #ffb74d;
+    border-radius: 12px;
+}
+
+.icing {
+    width: 130px;
+    height: 22px;
+    background: #fff;
+    border-radius: 12px;
+}
+
+.candle {
+    position: absolute;
+    width: 12px;
+    height: 40px;
+    background: #4fc3f7;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+}
+
+.candle::after {
+    content: "🔥";
+    position: absolute;
+    top: -28px;
+    left: -7px;
+    font-size: 22px;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px) {
+
+    .scene h1 {
+        font-size: 36px;
+    }
+
+    #message {
+        font-size: 20px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .girl {
+        transform: scale(.8);
+    }
+
+    .table {
+        transform: scale(.85);
+    }
+
+}

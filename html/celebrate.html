@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday 🎂</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/page1.css">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+
+    <div id="loader">
+
+        <div class="cake-loader">
+
+            🎂
+
+        </div>
+
+        <h2>Preparing Your Surprise...</h2>
+
+    </div>
+
+    <!-- Background -->
+
+    <div class="background">
+
+        <div class="stars"></div>
+
+        <div class="moon"></div>
+
+        <div class="cloud c1"></div>
+        <div class="cloud c2"></div>
+        <div class="cloud c3"></div>
+
+    </div>
+
+    <!-- Balloons -->
+
+    <div class="balloons">
+
+        <div class="balloon red"></div>
+        <div class="balloon blue"></div>
+        <div class="balloon green"></div>
+        <div class="balloon yellow"></div>
+        <div class="balloon pink"></div>
+        <div class="balloon purple"></div>
+        <div class="balloon orange"></div>
+        <div class="balloon cyan"></div>
+
+    </div>
+
+    <!-- Confetti -->
+
+    <div id="confetti-container"></div>
+
+    <!-- Fireworks -->
+
+    <canvas id="fireworks"></canvas>
+
+    <!-- Floating Hearts -->
+
+    <div class="heart-container"></div>
+
+    <!-- Floating Sparkles -->
+
+    <div class="sparkles"></div>
+
+    <!-- Main Content -->
+
+    <section class="hero">
+    
+        <div class="glasss">
+    
+            <h4 class="animate__animated animate__fadeInDown">
+    
+             
+    
+            </h4>
+    
+            <h1 class="animate__animated animate__zoomIn">
+    
+             
+    
+            </h1>
+    
+            <h2 id="typing"></h2>
+    
+        
+    
+            <div class="cakes">
+    
+          
+
+
+
+    
+            </div>
+    
+            <button id="celebrateBtns">
+    
+                <i class="fa-solid fa-gift"></i>
+    
+                🎁 Surprise Gifts
+    
+            </button>
+    
+        </div>
+    
+    </section>
+<div class="video-bg">
+    <video id="birthdayVideo" autoplay loop  muted preload="auto" disablepictureinpicture>
+        <source src="../assets/birthday.mp4" type="video/mp4">
+    </video>
+</div>
+    <!-- Floating Gift -->
+
+    <div class="gift">
+
+        🎁
+
+    </div>
+
+    <!-- Floating Stars -->
+
+    <div class="star1">⭐</div>
+    <div class="star2">⭐</div>
+    <div class="star3">⭐</div>
+    <div class="star4">⭐</div>
+
+    <!-- Music -->
+
+    <audio id="bgMusic" loop>
+
+        <source src="assets/audio/bg.mp3" type="audio/mpeg">
+
+    </audio>
+
+    <!-- Cursor Glow -->
+
+    <div id="cursor"></div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        Made with ❤️ For Someone Special
+
+    </footer>
+
+    <!-- JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="/js/celebrate.js"></script>
+
+</body>
+
+</html>
