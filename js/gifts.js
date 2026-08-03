@@ -44,31 +44,31 @@ const giftData = [
 
     {
         title: "🎂 Surprise 2",
-        image: "/assets/images/gift2.jpg",
+        image: "../assets/images/gift2.jpg",
         message: "🎈 May Your Dreams Come True!"
     },
 
     {
         title: "🎁 Surprise 3",
-        image: "/assets/images/gift3.jpg",
+        image: "../assets/images/gift3.jpg",
         message: "🥳 Enjoy Your Special Day!"
     },
 
     {
         title: "🌹 Surprise 4",
-        image: "/assets/images/gift4.jpg",
+        image: "../assets/images/gift4.jpg",
         message: "🌹 Lots of Love & Happiness!"
     },
 
     {
         title: "💖 Surprise 5",
-        image: "/assets/images/gift5.jpg",
+        image: "../assets/images/gift5.jpg",
         message: "❤️ Keep Smiling Forever!"
     },
 
     {
         title: "✨ Surprise 6",
-        image: "./assets/images/gift6.jpg",
+        image: "../assets/images/gift6.jpg",
         message: "✨ Best Wishes!"
     },
 
@@ -80,19 +80,19 @@ const giftData = [
 
     {
         title: "🎈 Surprise 8",
-        image: "/assets/images/gift8.jpg",
+        image: "../assets/images/gift8.jpg",
         message: "🎈 Have Fun!"
     },
 
     {
         title: "🎉 Surprise 9",
-        image: "./assets/images/gift9.jpg",
+        image: "../assets/images/gift9.jpg",
         message: "💝 You Are Amazing!"
     },
 
     {
         title: "👑 Surprise 10",
-        image: "./assets/images/gift10.jpg",
+        image: "../assets/images/gift10.jpg",
         message: "👑 Happy Birthday Superstar!"
     }
 
