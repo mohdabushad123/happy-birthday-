@@ -260,7 +260,7 @@ document.getElementById("celebrateBtns").addEventListener("click", () => {
 
     setTimeout(() => {
         console.log("Button Clicked")
-        window.location.href = "./html/gifts.html";
+        window.location.href = "../html/gifts.html";
 
     }, 1800);
 
