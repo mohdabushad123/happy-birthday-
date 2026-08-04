@@ -11,7 +11,7 @@
 
 body {
     min-height: 100vh;
-    
+  
     background: linear-gradient(135deg, #2b1055, #120136, #000814);
     color: #fff;
 }
@@ -39,7 +39,7 @@ html {
 }
 
 #loader h2 {
-    margin-top: 20px;
+    margin-top: 0px;
     color: white;
     letter-spacing: 2px;
 }
@@ -425,6 +425,13 @@ html {
 ========================== */
 
 @media(max-width:768px) {
+
+    #loader h2 {
+            
+        font-size: 18px;
+            color: white;
+            letter-spacing: 2px;
+        }
 
     .title {
 
