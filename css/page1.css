@@ -132,7 +132,7 @@ body {
     position: absolute;
     width: 220px;
     height: 70px;
-    background: rgba(255, 255, 255, .08);
+    background: rgba(255, 255, 255, 0.815);
     border-radius: 100px;
     filter: blur(2px);
 
@@ -670,30 +670,31 @@ footer {
 
     #loader h2 {
         font-size: 18px;
-            margin-top: 0px;
-            color: white;
-            letter-spacing: 2px;
-        }
+        margin-top: 0px;
+        color: white;
+        letter-spacing: 2px;
+    }
+
     footer {
-            position: fixed;
-            bottom: 10px;
-            width: 90%;
-            text-align: center;
-            color: #f2fffc;
-            font-size: 14px;
-        }
+        position: fixed;
+        bottom: 60px;
+        width: 90%;
+        text-align: center;
+        color: #f2fffc;
+        font-size: 14px;
+    }
 
     .glass {
-        width: 90%;
+        width: 80%;
         padding: 0px;
-        height: 70%;
+        height: 80%;
     }
 
     .glasss {
 
         width: 300px;
         padding: 0;
-
+        height: 400px;
         text-align: center;
 
         border-radius: 25px;
@@ -701,15 +702,17 @@ footer {
 
 
     }
-.cakes {
 
-    font-size: 80px;
+    .cakes {
 
-    margin: 300px 0;
+        font-size: 80px;
 
-    animation: float 2s ease-in-out infinite;
+        margin: 350px 0;
 
-}
+        animation: float 2s ease-in-out infinite;
+
+    }
+
     .glass h1 {
         font-size: 30px;
     }
@@ -746,6 +749,7 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
+
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -795,10 +799,10 @@ footer {
 @media (max-width:768px) {
 
     #birthdayVideo {
-        width: calc(100% - 40px);
+        width: calc(100% - 400px);
         /* दोनों तरफ 20px का गैप */
         height: auto;
-        max-height: 550px;
+        max-height: 300px;
         border-radius: 15px;
     }
 
@@ -806,10 +810,6 @@ footer {
 
 @media (max-width:768px) {
 
-    #birthdayVideo {
-        width: calc(90% - 400px);
-        height: auto;
-    }
 
     #birthdayVideo {
         width: 300px;
