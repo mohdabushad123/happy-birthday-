@@ -74,7 +74,7 @@ const giftData = [
 
     {
         title: "🎊 Surprise 7",
-        image: "./assets/images/gift7.jpg",
+        image: "../assets/images/gift7.jpg",
         message: "🎊 Celebrate Every Moment!"
     },
 
