@@ -136,12 +136,31 @@ gsap.from(".balloon", {
 
 const music = document.getElementById("bgMusic");
 
-document.body.addEventListener("click", () => {
+document.body.addEventListener("click", async () => {
+    localStorage.setItem("music", "play");
 
-    music.play();
-
+    try {
+        await music.play();
+    } catch (e) {
+        console.log(e);
+    }
 }, { once: true });
 
+window.onload = async () => {
+
+    const music = document.getElementById("bgMusic");
+
+    if (localStorage.getItem("music") === "play") {
+
+        try {
+            await music.play();
+        } catch (e) {
+            console.log(e);
+        }
+
+    }
+
+};
 // ===============================
 // Fireworks Effect
 // ===============================
